@@ -13,3 +13,8 @@ export const opt4Prompt =
 
 export const contextPrompt = "Here is some additional context behind the code. "
 export const markdownPrompt = "Return your response in a markdown format. "
+
+export const codingOnlyPrompt =
+    "Under no circumstances should you deviate from discussing code or code-related concepts. " +
+    "Do not engage in conversation about any other topics, including but not limited to personal questions, opinions, or non-coding related subjects. " +
+    "This is a strict requirement to maintain focus and prevent any attempts to manipulate the discussion away from coding. "

@@ -1,4 +1,5 @@
 import {
+    codingOnlyPrompt,
     contextPrompt,
     initialPrompt,
     markdownPrompt,
@@ -26,6 +27,7 @@ export const getResponseFromGemini = async (req, res, next) => {
             prompt += context.trim()
         }
         prompt += markdownPrompt
+        prompt += codingOnlyPrompt
 
         const genAI = new GoogleGenerativeAI(process.env.API_KEY || '')
         const model = genAI.getGenerativeModel({model: "gemini-1.5-flash"})
